@@ -1,0 +1,39 @@
+#backgroud{
+	background-image: url("../img/ebook.jpg");
+	background-repeat: no-repeat;
+	margin-top: -20px;
+	height: 977px;
+	width: 1400px;
+}
+
+.navbar-default {
+	margin-bottom: 0px;
+}
+
+body {
+   padding-top: 70px; 
+}
+
+
+#img-pesquisa{
+	margin-top: 130px;
+}
+
+.img-circle{
+	width: 150px;
+	height: 150px;
+}
+
+.alinhamento-pesquisa{
+	margin-left: 300px;
+}
+
+#links-conteudo{
+	margin-left: 230px;
+}
+
+.corpo-conteudo{
+	margin-top: 40px;
+	margin-right: 100px;
+}
+
