@@ -7,8 +7,9 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="resources/css/bootstrap.css"></link>
 		<link rel="stylesheet" href="resources/css/custom.css"></link>
+		<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
 	</head>
-	
+		
 	<body>
 		<header>
 			<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -95,70 +96,70 @@
 						</div>
 					</div>
 				</div>
-		        
-		        <div class="modal fade" id="modalCadastroLitro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				    <div class="modal-dialog">
-				       	<div class="modal-content">
-					        <div class="modal-header">
-					              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					              <h4 class="modal-title" id="myModalLabel">Cadastro de livro</h4>
-				            </div>
-		
-				            <div class="modal-body">
-				                <div id="cadastro-livro">
-							    	<div class="row">
-								    	<div class="col-lg-12">
-								        	<div>
-								        		Título
-								        		<input type="text" class="form-control">
-								        	</div>
-								        	<div>
-								        		Autor
-								        		<input type="text" class="form-control">
-								        	</div>						        	
-							        		<div>
-							        			Editora
-							        			<input type="text" class="form-control">
-							        		</div>
-							        		<div class="row">
-								        		<div class="col-md-6">
-								        			Cód.Livro
-								        			<input type="text" class="form-control">
-								        		</div>							        	
-									        	<div class="col-md-6"> 
-									        		Quantidade
-									        		<input type="text" class="form-control">
+		        <form action="livro">
+			        <div class="modal fade" id="modalCadastroLitro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					    <div class="modal-dialog">
+					       	<div class="modal-content">
+						        <div class="modal-header">
+						              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						              <h4 class="modal-title" id="myModalLabel">Cadastro de livro</h4>
+					            </div>
+			
+					            <div class="modal-body">
+					                <div id="cadastro-livro">
+								    	<div class="row">
+									    	<div class="col-lg-12">
+									        	<div>
+									        		Título
+									        		<input type="text" class="form-control" name="titulo">
 									        	</div>
-							        		</div>
-							        		<div class="row">
-								        		<div id="observacao" class="col-md-12">
-									        		Observação
-									        		<textarea class="form-control" rows="3"></textarea>
+									        	<div>
+									        		Autor
+									        		<input type="text" class="form-control" name="autor">
+									        	</div>						        	
+								        		<div>
+								        			Editora
+								        			<input type="text" class="form-control" name="editora">
 								        		</div>
-							        		</div>
-							        	</div>	
-							        </div>
-							    </div>
-				            </div>
-				            
-				            <div class="modal-footer">
-				              	<div class="pull-right">
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<button class="btn btn-info btn-block btn-salvar"><span class="glyphicon glyphicon-floppy-disk">&nbsp</span> Salvar</button>
+								        		<div class="row">
+									        		<div class="col-md-6">
+									        			Cód.Livro
+									        			<input type="text" class="form-control" name="codigo">
+									        		</div>							        	
+										        	<div class="col-md-6"> 
+										        		Quantidade
+										        		<input type="text" class="form-control" name="quantidade">
+										        	</div>
+								        		</div>
+								        		<div class="row">
+									        		<div id="observacao" class="col-md-12">
+										        		Observação
+										        		<textarea class="form-control" rows="3" name="observacao"></textarea>
+									        		</div>
+								        		</div>
+								        	</div>	
+								        </div>
+								    </div>
+					            </div>
+					            
+					            <div class="modal-footer">
+					              	<div class="pull-right">
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<button type="submit" id="btn-salvar" class="btn btn-info btn-block "><span class="glyphicon glyphicon-floppy-disk">&nbsp</span> Salvar</button>
+										</div>
+										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+											<button id="cancelar" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-ban-circle">&nbsp</span> Cancelar</button>
+										</div> 
 									</div>
-									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<button class="btn btn-danger btn-block"><span class="glyphicon glyphicon-ban-circle">&nbsp</span> Cancelar</button>
-									</div> 
-								</div>
-				            </div>
-			          	</div><!-- /.modal-content -->
-			        </div><!-- /.modal-dialog -->
-			    </div><!-- /.modal -->
+					            </div>
+				          	</div><!-- /.modal-content -->
+				        </div><!-- /.modal-dialog -->
+				    </div><!-- /.modal -->
+				</form>			  
 			</div> <!-- Fim do corpo do conteudo -->
 		</div> <!-- Fim do container -->
 	</body>
 	
-	<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
-	<script type="text/javascript" src="resources/js/bootstrap.js"></script>
 	
+	<script type="text/javascript" src="resources/js/bootstrap.js"></script>	
 </html>
