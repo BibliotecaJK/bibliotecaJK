@@ -20,6 +20,7 @@
 		            <span class="icon-bar"></span>
 		            <span class="icon-bar"></span>
 		          </button>
+		          <img id="img-faculdade" class="pull-left" alt="Faculdade JK" src="resources/img/faculdadeJk.png">
 		          <a class="navbar-brand" href="#">BIBLIOTECA JK</a>
 		        </div>
 		        <div class="navbar-collapse collapse">
@@ -62,35 +63,36 @@
 				</div>
 
 				<div class="row" id="links-conteudo">
-					
-					<div class="col-lg-2">
-						<a data-toggle="modal" data-target="#modalCadastroLitro">
-						<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-						<h4 style="margin-left:10px">Cadastrar livro<h4>
-					</div>
-
-					<div class="col-lg-2">
-						<a href="#" target="_blank">
-						<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-						<h4 style="margin-left: 25px">Emprestimos<h4>
-					</div>
-
-					<div class="col-lg-2">
-						<a href="#" target="_blank">
-						<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-						<h4 style="margin-left: 55px">multa<h4>
-					</div>
-
-					<div class="col-lg-2">
-						<a href="#" target="_blank">
-						<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-						<h4 style="margin-left: 40px">Relatorios<h4>
-					</div>
-
-					<div class="col-lg-2">
-						<a href="#" target="_blank">
-						<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-						<h4 style="margin-left: 55px">Outros<h4>
+					<div class="btn-conteudos">	
+						<div class="col-lg-2">
+							<a data-toggle="modal" data-target="#modalCadastroLitro">
+							<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
+							<h4 style="margin-left:10px">Cadastrar livro<h4>
+						</div>
+	
+						<div class="col-lg-2">
+							<a href="#" target="_blank">
+							<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
+							<h4 style="margin-left: 25px">Emprestimos<h4>
+						</div>
+	
+						<div class="col-lg-2">
+							<a href="#" target="_blank">
+							<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
+							<h4 style="margin-left: 55px">multa<h4>
+						</div>
+	
+						<div class="col-lg-2">
+							<a href="#" target="_blank">
+							<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
+							<h4 style="margin-left: 40px">Relatorios<h4>
+						</div>
+	
+						<div class="col-lg-2">
+							<a href="#" target="_blank">
+							<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
+							<h4 style="margin-left: 55px">Outros<h4>
+						</div>
 					</div>
 				</div>
 		        
@@ -138,6 +140,7 @@
 							        </div>
 							    </div>
 				            </div>
+				            
 				            <div class="modal-footer">
 				              	<div class="pull-right">
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">

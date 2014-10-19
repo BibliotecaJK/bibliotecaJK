@@ -3,7 +3,7 @@
 	background-repeat: no-repeat;
 	margin-top: -20px;
 	height: 977px;
-	width: 1400px;
+	width: 1350px;
 }
 
 .navbar-default {
@@ -26,14 +26,24 @@ body {
 
 .alinhamento-pesquisa{
 	margin-left: 300px;
+	margin-top: 0px;
+	margin-bottom: 50px;
 }
 
 #links-conteudo{
 	margin-left: 230px;
 }
 
+#img-faculdade{
+	width: 70px;
+	height: 50px;
+	margin-right: 15px;
+	
+}
+
 .corpo-conteudo{
 	margin-top: 40px;
-	margin-right: 100px;
+	margin-right: 80px;
 }
+
 
