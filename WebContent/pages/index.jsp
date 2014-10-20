@@ -7,6 +7,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<link rel="stylesheet" href="resources/css/bootstrap.css"></link>
 		<link rel="stylesheet" href="resources/css/custom.css"></link>
+		<link rel="shortcut icon" href="resources/img/icon-jk.ico" ></link>
 		<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
 	</head>
 		
@@ -26,7 +27,6 @@
 		        </div>
 		        <div class="navbar-collapse collapse">
 		          <ul class="nav navbar-nav">
-		            <li class="active"><a href="#">Dashbord</a></li>
 		            <li><a href="#about">Serviços</a></li>
 		            <li><a href="#contact">Contato</a></li>
 		          </ul>
@@ -148,7 +148,7 @@
 											<button type="submit" id="btn-salvar" class="btn btn-info btn-block "><span class="glyphicon glyphicon-floppy-disk">&nbsp</span> Salvar</button>
 										</div>
 										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-											<button id="cancelar" class="btn btn-danger btn-block"><span class="glyphicon glyphicon-ban-circle">&nbsp</span> Cancelar</button>
+											<button type="button" id="cancelar" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-ban-circle">&nbsp</span> Cancelar</button>
 										</div> 
 									</div>
 					            </div>
@@ -161,5 +161,6 @@
 	</body>
 	
 	
-	<script type="text/javascript" src="resources/js/bootstrap.js"></script>	
+	<script type="text/javascript" src="resources/js/bootstrap.js"></script>
+	<script type="text/javascript" src="resources/js/custom.js"></script>	
 </html>
