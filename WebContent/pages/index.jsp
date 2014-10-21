@@ -96,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-		        <form action="livro">
+		        <form action="livroServlet" method="post">
 			        <div class="modal fade" id="modalCadastroLitro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					    <div class="modal-dialog">
 					       	<div class="modal-content">
@@ -111,30 +111,30 @@
 									    	<div class="col-lg-12">
 									        	<div>
 									        		Título
-									        		<input type="text" class="form-control" name="titulo">
+									        		<input type="text" class="form-control" name="titulo" checked="checked" value="${requestScoped.livro.titulo}">
 									        	</div>
 									        	<div>
 									        		Autor
-									        		<input type="text" class="form-control" name="autor">
+									        		<input type="text" class="form-control" name="autor" value="${requestScoped.livro.autor}">
 									        	</div>						        	
 								        		<div>
 								        			Editora
-								        			<input type="text" class="form-control" name="editora">
+								        			<input type="text" class="form-control" name="editora" value="${requestScoped.livro.editora}">
 								        		</div>
 								        		<div class="row">
 									        		<div class="col-md-6">
 									        			Cód.Livro
-									        			<input type="text" class="form-control" name="codigo">
+									        			<input type="text" class="form-control" name="codigo" value="${requestScoped.livro.codigo}">
 									        		</div>							        	
 										        	<div class="col-md-6"> 
 										        		Quantidade
-										        		<input type="text" class="form-control" name="quantidade">
+										        		<input type="text" class="form-control" name="quantidade" value="${requestScoped.livro.quantidade}">
 										        	</div>
 								        		</div>
 								        		<div class="row">
 									        		<div id="observacao" class="col-md-12">
 										        		Observação
-										        		<textarea class="form-control" rows="3" name="observacao"></textarea>
+										        		<input class="form-control" name="observacao" value="${requestScoped.livro.quantidade}">
 									        		</div>
 								        		</div>
 								        	</div>	
@@ -145,7 +145,7 @@
 					            <div class="modal-footer">
 					              	<div class="pull-right">
 										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-											<button type="submit" id="btn-salvar" class="btn btn-info btn-block "><span class="glyphicon glyphicon-floppy-disk">&nbsp</span> Salvar</button>
+											<button type="submit" id="btn-salvar" class="btn btn-info btn-block " onclick="salvar()"><span class="glyphicon glyphicon-floppy-disk">&nbsp</span> Salvar</button>
 										</div>
 										<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 											<button type="button" id="cancelar" class="btn btn-danger btn-block" data-dismiss="modal"><span class="glyphicon glyphicon-ban-circle">&nbsp</span> Cancelar</button>

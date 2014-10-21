@@ -9,40 +9,37 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet("/livro")
+import br.com.bibliotecaJk.DAO.LivroDAO;
+import br.com.bibliotecaJk.domain.Livro;
+
+@SuppressWarnings("serial")
+@WebServlet("/livroServlet")
 public class LivroController extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
-		super.doPost(request, response);
+
+		PrintWriter out = response.getWriter();
+
+		Livro livro = new Livro();
+		livro.setAutor(request.getParameter("autor"));
+		livro.setTitulo(request.getParameter("titulo"));
+		livro.setEditora(request.getParameter("editora"));
+		livro.setCodigo(Long.parseLong(request.getParameter("codigo")));
+		livro.setQuantidade(Long.parseLong(request.getParameter("quantidade")));
+		livro.setObservacao(request.getParameter("observacao"));
+
+		LivroDAO dao = new LivroDAO();
+		dao.inserir(livro);
+		
+		response.sendRedirect("pages/index.jsp");
 	}
 
 	@Override
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
-		PrintWriter out = response.getWriter();
-		
-		String titulo = request.getParameter("titulo");
-		String autor = request.getParameter("autor");
-		String editora = request.getParameter("editora");
-		String codigo = request.getParameter("codigo");
-		String quantidade = request.getParameter("quantidade");
-		String observacao = request.getParameter("observacao");
-		
-
-		out.println("<html>");
-		out.println("<body>");
-		out.println("Pegando parâmetros da requisição:" + "<br />");
-		out.println("Autor: " + autor + "<br />");
-		out.println("Titulo: " + titulo + "<br />");
-		out.println("Editora: " + editora + "<br />");
-		out.println("Codigo: " + codigo + "<br />");
-		out.println("Quantidade: " + quantidade + "<br />");
-		out.println("Observações: " + observacao + "<br />");
-		out.println("</body>");
-		out.println("</hmtl>");
 	}
 
 }
