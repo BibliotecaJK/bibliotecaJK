@@ -96,7 +96,7 @@
 						</div>
 					</div>
 				</div>
-		        <form action="livroServlet" method="post">
+		        <form action="livroServlet" method="post" >
 			        <div class="modal fade" id="modalCadastroLitro" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					    <div class="modal-dialog">
 					       	<div class="modal-content">

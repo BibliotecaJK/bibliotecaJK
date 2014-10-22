@@ -33,7 +33,7 @@ public class LivroController extends HttpServlet {
 		LivroDAO dao = new LivroDAO();
 		dao.inserir(livro);
 		
-		response.sendRedirect("pages/index.jsp");
+		response.sendRedirect("index.jsp");
 	}
 
 	@Override
