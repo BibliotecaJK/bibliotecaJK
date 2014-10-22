@@ -2,7 +2,9 @@ package br.com.bibliotecaJk.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.List;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -39,6 +41,14 @@ public class LivroController extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
+		
+		LivroDAO livro = new LivroDAO();		
+		List<Livro> lista = livro.listar();
+		
+		request.setAttribute("lista", lista);
+		
+		RequestDispatcher saida = request.getRequestDispatcher("pages/tabelaCadastroLivro.jsp");
+		saida.forward(request, response);
 
 	}
 

@@ -1,3 +1,4 @@
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -14,7 +15,35 @@
 		<div class="container">
 			<div class="col-md-7">
 			  <table class="table table-bordered" style="margin-top:50px;">
-			      <thead>
+			  
+			  	<tr>
+			  		<th>Cód. Livro</th>
+			          <th>Título</th>
+			          <th>Autor</th>
+			          <th>Editora</th>
+			          <th>Quantidade</th>
+			          <th>Observação</th>
+			          <th>Ações</th>
+			  	</tr>
+			      <%
+			      	List<Livro> lista = (List<Livro>) request.getAttribute("lista");
+			      
+			      	for (Livro livro : lista) {
+			      		%>
+			      		<tr> 
+			      			<td><% out.print(livro.getCodigo()); %></td>
+			      			<td><% out.print(livro.getTitulo()); %></td>
+			      			<td><% out.print(livro.getAutor()); %></td>
+			      			<td><% out.print(livro.getEditora()); %></td>
+			      			<td><% out.print(livro.getQuantidade()); %></td>
+			      			<td><% out.print(livro.getObservacao()); %></td>
+			      		</tr>
+			      		<%
+			      	}
+			      %>
+			      
+			      
+	<!-- 		      <thead>
 			        <tr>
 			          <th style="width:20px;">Cód. Livro</th>
 			          <th stye="width:60px">Título</th>
@@ -61,7 +90,7 @@
 			        </tr>
 			      </tbody>
 			    </table>
-		    </div>
+		    </div>  -->
 		</div> <!-- Fim do container -->
 	</body>
 	
