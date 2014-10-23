@@ -18,7 +18,7 @@
 			<form class="form-signin well" role="form" target="_blank">	
 				<img src="resources/img/faculdadeJk.png" alt="Avatar" title="Avatar" class="img-rounded">
 
-				<input type="text" class="form-control" title="Informe seu usuario" placeholder="Usuario" required autofocus>
+				<input type="text" class="form-control" title="Informe seu usuario" placeholder="codigo" required autofocus>
 				<input type="password" class="form-control" title="Informe sua Senha" placeholder="Senha" required >
 											
 				<div class="entrar">
