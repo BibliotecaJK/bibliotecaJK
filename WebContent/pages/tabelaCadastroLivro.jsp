@@ -10,7 +10,13 @@
 		<link rel="shortcut icon" href="resources/img/icon-jk.ico" ></link>
 		<script type="text/javascript" src="../resources/js/jquery-1.10.2.min.js"></script>
 	</head>
-		
+	<script type="text/javascript">
+		function cofimaExclusao(id){
+			if(window.confirm("Tem certeza que deseja excluir o registro:"+id)){
+				location.href="livroServlet?acao=exc&id="+id;
+			}
+		}
+	</script>
 	<body>
 		<div class="container">
 			<div class="col-md-7">
@@ -29,44 +35,33 @@
 			          <th stye="width:40px">Ações</th>
 			        </tr>
 			      </thead>
-			      <tbody>
-			        <tr>
-			          <td>1</td>
-			          <td>Os tres porquinhos</td>
-			          <td>Fabio Junior</td>
-			          <td>epner</td>
-			          <td>1</td>
-			          <td>Otimo livro</td>
-			          <td>
-			          	<a href="#"><span class="glyphicon glyphicon-trash" style="margin-right:10px;"> </span><span class="glyphicon glyphicon-edit"> </span></a>
-			          </td>
-			        </tr>
-			        <tr>
-			          <td>1</td>
-			          <td>Os tres porquinhos</td>
-			          <td>Fabio Junior</td>
-			          <td>epner</td>
-			          <td>1</td>
-			          <td>Otimo livro</td>
-			          <td>
-			          	<a href="#"><span class="glyphicon glyphicon-trash" style="margin-right:10px;"> </span><span class="glyphicon glyphicon-edit"> </span></a>
-			          </td>
-			        </tr>
-			        <tr>
-			          <td>2</td>
-			          <td>Os tres porquinhos</td>
-			          <td>Fabio Junior</td>
-			          <td>epner</td>
-			          <td>1</td>
-			          <td>Otimo livro</td>
-			          <td>
-			          	<a href="#"><span class="glyphicon glyphicon-trash" style="margin-right:10px;"> </span><span class="glyphicon glyphicon-edit"> </span></a>
-			          </td>
-			        </tr>
-			      </tbody>
-			    </table>
-		    </div>  
-		</div> <!-- Fim do container -->
+			      <c:forEach items="${requestScope.livro}" var="livro">
+			<tr>
+				<td>
+					${livro.codigo} 
+		
+				</td>
+				<td>
+					${livro.titulo}
+				</td>
+				<td>
+					${livro.autor}
+				</td>
+				<td>
+					${livro.editora}
+				</td>
+				<td>
+					${livro.quantidade}
+				</td>
+				<td>
+					${livro.observacao}
+				</td>
+				<td>
+					<a href="javascript:cofimaExclusao(${lista.codigo})"/>>Excluir
+					<a href="livroServlet?acao=alt&codigo=${lista.codigo}"/>>Alterar
+				</td>
+			</tr>
+		</c:forEach>
 	</body>
 	
 	

@@ -49,6 +49,73 @@ public class LivroController extends HttpServlet {
 		
 		RequestDispatcher saida = request.getRequestDispatcher("pages/tabelaCadastroLivro.jsp");
 		saida.forward(request, response);
+		
+		System.out.println("Metodo Get");	
+		LivroDAO dao = new LivroDAO();
+		String acao;
+		if (request.getParameter("acao") == null){
+			acao = "list";
+		}else{
+			acao = request.getParameter("acao");
+		}
+		if (acao != null && acao.equals("exc")){
+//			Captura parametro da tela
+			Livro livro2 = new Livro();
+			Long codigo = Long.parseLong(request.getParameter("codigo"));
+			livro2.setCodigo(codigo);
+//			Excluir com UsuarioDAO
+			dao.deletar(livro2);
+			//redirecinar
+			response.sendRedirect("livroServlet");
+			
+		}
+		else if (acao != null && acao.equals("alt")){
+//			Captura parametro da tela
+			Long codigo = Long.parseLong(request.getParameter("codigo"));
+//			Seta atributo no request com objeto usuario
+			Livro livro2 = dao.bucarPorId(codigo);
+			request.setAttribute("usuario", livro2);
+//			encaminha objeto usuario para tela
+			RequestDispatcher saidaLivro= request.getRequestDispatcher("");
+			saidaLivro.forward(request, response);
+			
+		}
+		else if (acao != null && acao.equals("cad")){
+			//Cria objeto usuario
+			Livro livro2 = new Livro();
+			livro2.setAutor("");
+			livro2.setTitulo("");
+			livro2.setEditora("");
+			livro2.setCodigo(0L);
+			livro2.setQuantidade(0L);
+			livro2.setObservacao("");
+			// seta atributo para a tela
+			request.setAttribute("usuario", livro2);
+			RequestDispatcher saidaLivro= request.getRequestDispatcher("");
+			saida.forward(request, response);
+			
+		}
+		else if (acao!=null && acao.equals("exlTds")){
+			dao.deletarTodos();
+			//redirecionar no browser
+			response.sendRedirect("livroServlet");
+			System.out.println("Tabela limpa");
+		}
+		
+		if(acao.equals("list")) {
+			
+	
+		// Obter a lista
+		List<Livro> livro2 = dao.listar();
+		//Encaminhamento no JSP
+		
+		request.setAttribute("livro", livro2);
+
+//		engavetar no request
+		
+		RequestDispatcher saida2= request.getRequestDispatcher("/pages/tabelaCadastroLivro.jsp");
+		saida.forward(request, response);
+		}
 
 	}
 

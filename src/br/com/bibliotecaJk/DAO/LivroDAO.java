@@ -102,8 +102,73 @@ public class LivroDAO {
 		}
 	}
 	
-	public void bucarPorId(Livro livro){
-		
-	}
+	public Livro bucarPorId(Long codigo){
+		//Monta SQL
+		String sql = "SELECT * FROM livro WHERE codigo = ?";
+		//Constroir PreparaStatement com SQL
+		Livro livro = null;
+		try {
+			Connection con = ConexaoFactory.conectar();
+			PreparedStatement preparador = con.prepareStatement(sql);
+			ResultSet resultado = preparador.executeQuery();
+			if(resultado.next()){
+				livro = new Livro();
+				livro.setCodigo(resultado.getLong("codigo")); 
+				livro.setAutor(resultado.getString("autor"));
+				livro.setEditora(resultado.getString("editora"));
+				livro.setTitulo(resultado.getString("titulo"));
+				livro.setQuantidade(resultado.getLong("quantidade"));
+				livro.setObservacao(resultado.getString("observacao"));
+				livro.setMatricula_aluno(resultado.getLong("matricula_aluno"));
+				livro.setStatus(resultado.getString("status"));
 
+			}
+			preparador.close();
+			System.out.println("Selecionado por codigo");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return livro;
+	}
+	
+	public void deletarTodos(){
+		//Monta SQL
+		String sql = "DELETE FROM livro";
+		//Constroe PreparaStatement com SQL
+		try {
+			Connection con = ConexaoFactory.conectar();
+			PreparedStatement preparador = con.prepareStatement(sql);
+			preparador.execute();
+			preparador.close();
+			System.out.println("Excluido todos com sucesso");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public Livro autenticar(Livro livro){
+		String sql = "SELECT * FROM livro WHERE codigo = ? ";
+		Livro livroRetorno=null;
+		try {
+			Connection con = ConexaoFactory.conectar();
+			PreparedStatement preparador = con.prepareStatement(sql);
+			preparador.setLong(1, livro.getCodigo());
+			ResultSet resultado = preparador.executeQuery();
+			if(resultado.next()){
+				livroRetorno = new Livro();
+				livroRetorno.setCodigo(resultado.getLong("codigo")); 
+				livroRetorno.setAutor(resultado.getString("autor"));
+				livroRetorno.setEditora(resultado.getString("editora"));
+				livroRetorno.setTitulo(resultado.getString("titulo"));
+				livroRetorno.setQuantidade(resultado.getLong("quantidade"));
+				livroRetorno.setObservacao(resultado.getString("observacao"));
+				livroRetorno.setMatricula_aluno(resultado.getLong("matricula_aluno"));
+				livroRetorno.setStatus(resultado.getString("status"));
+			}
+			System.out.println("Buscado com sucesso");
+		} catch (SQLException e) {
+			System.out.println("Erro"+"\n"+e.getMessage());
+		}
+		return livroRetorno;
+	}
 }
