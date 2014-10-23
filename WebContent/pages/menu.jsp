@@ -16,15 +16,9 @@
            <li><a href="#about">Serviços</a></li>
            <li><a href="#contact">Contato</a></li>
          </ul>
-         <form class="navbar-form navbar-right" role="form">
-	    <div class="form-group">
-	      <input placeholder="Usuario" class="form-control" type="text">
-	    </div>
-	    <div class="form-group">
-	      <input placeholder="Senha" class="form-control" type="password">
-	    </div>
-	    <button type="submit" class="btn btn-success">Entrar</button>
-	</form>
+        <div class="text-rigth">
+        
+        </div>
        </div><!--/.nav-collapse -->
      </div>
 </div>			
