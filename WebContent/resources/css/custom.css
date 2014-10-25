@@ -1,9 +1,9 @@
-.navbar-default {
-	margin-bottom: 0px;
-}
-
 body {
 	padding-top: 70px;
+}
+
+.navbar-default {
+	margin-bottom: 0px;
 }
 
 .img-circle {
@@ -53,6 +53,10 @@ body {
 	text-align: center;
 }
 
+.text-livro{
+	text-align: justify;
+}
+
 #img-pesquisa {
 	margin-top: 120px;
 }
@@ -76,6 +80,10 @@ body {
 	
 }
 
+#painel-livros-cadastrados{
+	margin-top: 40px;
+}
+
 #backgrond-login{
 	background-image: url("../img/ee.jpg"); 
 	background-repeat: no-repeat;
@@ -84,4 +92,8 @@ body {
 
 #bemVindo {
 	margin-top: 200px;
+}
+
+#cancelar{
+	width: 134px;
 }

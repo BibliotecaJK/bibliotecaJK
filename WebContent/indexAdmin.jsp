@@ -16,7 +16,7 @@
 		</head>
 			
 		<body>
-			<c:import url="pages/menu.jsp" />		
+			<c:import url="menu.jsp" />		
 		
 			<div class="container" id="backgroud">
 				<div class="corpo-conteudo">
@@ -31,7 +31,7 @@
 									<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
 								</div>
 								<div class="col-md-2">
-									<button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button>
+									<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button></a>
 								</div>
 							</div>
 						</div>
@@ -91,7 +91,7 @@
 										    	<div class="col-lg-12">
 										        	<div>
 										        		Título
-										        		<input type="text" class="form-control" name="titulo" checked="checked" value="${requestScoped.livro.titulo}">
+										        		<input type="text" class="form-control" name="titulo" checked="checked" >
 										        	</div>
 										        	<div>
 										        		Autor
