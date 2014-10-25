@@ -44,6 +44,12 @@
 								<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
 								<h4 style="margin-left:10px">Cadastrar livro<h4>
 							</div>
+							
+							<div class="col-lg-2">
+								<a href="#" target="_blank">
+								<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
+								<h4 style="margin-left: 55px">Livros Cadastrados<h4>
+							</div>
 		
 							<div class="col-lg-2">
 								<a href="#" target="_blank">

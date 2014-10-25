@@ -27,6 +27,14 @@ body {
 	text-align: center;
 }
 
+.logout{
+	margin-top: 8px;
+}
+
+.btn-logout{
+	width: 100px;
+}
+
 .form-signin{
 	height: 350px;
 }
@@ -50,7 +58,7 @@ body {
 }
 
 #links-conteudo {
-	margin-left: 230px;
+	margin-left: 100px;
 }
 
 #img-faculdade {
@@ -65,6 +73,13 @@ body {
 	margin-top: -20px;
 	height: 977px;
 	width: 1350px;
+	
+}
+
+#backgrond-login{
+	background-image: url("../img/ee.jpg"); 
+	background-repeat: no-repeat;
+	margin-top: 80px;
 }
 
 #bemVindo {

@@ -1,4 +1,3 @@
-
 <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
      <div class="container">
        <div class="navbar-header">
@@ -16,8 +15,8 @@
            <li><a href="#about">Serviços</a></li>
            <li><a href="#contact">Contato</a></li>
          </ul>
-        <div class="text-rigth">
-        
+        <div class="pull-right logout">
+			<a href="login.jsp"><button class="btn btn-success btn-logout"><span class="glyphicon glyphicon-off"></span>&nbsp &nbsp Logout</button></a>
         </div>
        </div><!--/.nav-collapse -->
      </div>
