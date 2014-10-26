@@ -26,7 +26,7 @@
 			           <span class="icon-bar"></span>
 			         </button>
 			         <img id="img-faculdade" class="pull-left" alt="Faculdade JK" src="resources/img/faculdadeJk.png">
-			         <a class="navbar-brand" href="#">BIBLIOTECA JK</a>
+			         <a class="navbar-brand" href="indexAdmin.jsp">BIBLIOTECA JK</a>
 			       </div>
 			       <div class="navbar-collapse collapse">
 			         <ul class="nav navbar-nav">
@@ -34,7 +34,7 @@
 			           <li><a href="#contact">Contato</a></li>
 			         </ul>
 			        <div class="pull-right logout">
-						<a href="login.jsp"><button class="btn btn-success btn-logout"><span class="glyphicon glyphicon-off"></span>&nbsp &nbsp Logout</button></a>
+						<a href="login.jsp"><button class="btn btn-defalt btn-logout"><span class="glyphicon glyphicon-off"></span>&nbsp; &nbsp;sair </button></a>
 			        </div>
 			       </div><!--/.nav-collapse -->
 			     </div>

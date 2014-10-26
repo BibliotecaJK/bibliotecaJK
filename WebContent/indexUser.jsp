@@ -16,7 +16,7 @@
 		</head>
 			
 		<body>
-			<c:import url="pages/menu.jsp" />		
+			<c:import url="menu.jsp" />		
 		
 			<div class="container" id="backgroud">
 				<div class="corpo-conteudo">
@@ -27,11 +27,11 @@
 					<div id="campoPesquisa">
 						<div class="row">
 							<div class="alinhamento-pesquisa">
-								<div class="col-md-6">
+								<div class="col-md-7">
 									<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
 								</div>
 								<div class="col-md-2">
-									<button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button>
+									<a  href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button></a>
 								</div>
 							</div>
 						</div>

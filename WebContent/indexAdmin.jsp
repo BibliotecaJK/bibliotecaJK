@@ -48,7 +48,7 @@
 							<div class="col-lg-2">
 								<a href="#" target="_blank">
 								<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-								<h4 style="margin-left: 55px">Livros Cadastrados<h4>
+								<h4 style="margin-left: 30px">Meus livros<h4>
 							</div>
 		
 							<div class="col-lg-2">
@@ -60,13 +60,13 @@
 							<div class="col-lg-2">
 								<a href="#" target="_blank">
 								<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-								<h4 style="margin-left: 55px">multa<h4>
+								<h4 style="margin-left: 55px">Multa<h4>
 							</div>
 		
 							<div class="col-lg-2">
 								<a href="#" target="_blank">
 								<img id="img-pesquisa" src="resources/img/img-branca.jpg" alt="pesquisar" class="img-circle"></a>
-								<h4 style="margin-left: 40px">Relatorios<h4>
+								<h4 style="margin-left: 40px">Relatórios<h4>
 							</div>
 		
 							<div class="col-lg-2">

@@ -32,7 +32,11 @@ body {
 }
 
 .btn-logout{
-	width: 100px;
+	width: 80px;
+}
+
+.leia{
+	cursor: default;
 }
 
 .form-signin{
