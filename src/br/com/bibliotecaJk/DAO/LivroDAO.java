@@ -11,12 +11,16 @@ import br.com.bibliotecaJk.domain.Livro;
 import br.com.bibliotecaJk.factory.ConexaoFactory;
 
 public class LivroDAO {
-		public void inserir(Livro livro){
-		//Monta SQL
+	Connection con;
+	public LivroDAO() {
+		this.con = ConexaoFactory.conectar();
+	}
+	
+	public void inserir(Livro livro) {
+		// Monta SQL
 		String sql = "INSERT INTO LIVRO (autor, editora, titulo, quantidade, observacao, status) values (?,?,?,?,?,?)";
-		//Constroir PreparaStatement com SQL
+		// Constroir PreparaStatement com SQL
 		try {
-			Connection con = ConexaoFactory.conectar();
 			PreparedStatement preparador = con.prepareStatement(sql);
 			preparador.setString(1, livro.getAutor());
 			preparador.setString(2, livro.getEditora());
@@ -27,17 +31,17 @@ public class LivroDAO {
 			preparador.execute();
 			preparador.close();
 			System.out.println("Cadastrado");
+			con.commit();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public void update(Livro livro){
-		//Monta SQL
+
+	public void update(Livro livro) {
+		// Monta SQL
 		String sql = "UPDATE LIVRO SET autor=?, editora=?, titulo=?, quantidade=?, observacao=?, status=?, matricula_aluno=? WHERE codigo=?";
-		//Constroir PreparaStatement com SQL
+		// Constroir PreparaStatement com SQL
 		try {
-			Connection con = ConexaoFactory.conectar();
 			PreparedStatement preparador = con.prepareStatement(sql);
 			preparador.setString(1, livro.getAutor());
 			preparador.setString(2, livro.getEditora());
@@ -50,70 +54,69 @@ public class LivroDAO {
 			preparador.execute();
 			preparador.close();
 			System.out.println("Cadastrado");
+			this.con.commit();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public List<Livro> listar(){
-		//Monta SQL
-				String sql = "SELECT * FROM livro ORDER BY codigo";
-				//Constroir PreparaStatement com SQL
-				List<Livro> lista = new ArrayList<Livro>();
 
-				try {
-					Connection con = ConexaoFactory.conectar();
-					PreparedStatement preparador = con.prepareStatement(sql);
-					ResultSet resultado = preparador.executeQuery();
-					while(resultado.next()){
-						Livro livro = new Livro();
-						livro.setCodigo(resultado.getLong("codigo")); 
-						livro.setAutor(resultado.getString("autor"));
-						livro.setEditora(resultado.getString("editora"));
-						livro.setTitulo(resultado.getString("titulo"));
-						livro.setQuantidade(resultado.getLong("quantidade"));
-						livro.setObservacao(resultado.getString("observacao"));
-						livro.setMatricula_aluno(resultado.getLong("matricula_aluno"));
-						livro.setStatus(resultado.getString("status"));
+	public List<Livro> listar() {
+		// Monta SQL
+		String sql = "SELECT * FROM livro ORDER BY codigo";
+		// Constroir PreparaStatement com SQL
+		List<Livro> lista = new ArrayList<Livro>();
 
-						lista.add(livro);
-					}
-					preparador.close();
-					System.out.println("Selecionado todos com sucesso");
-				} catch (SQLException e) {
-					e.printStackTrace();
-				}
-				return lista;
-	}
-	
-	public void deletar(Livro livro){
-		//Monta SQL
-		String sql = "DELETE FROM livro WHERE codigo=?";
-		//Constroe PreparaStatement com SQL
 		try {
-			Connection con = ConexaoFactory.conectar();
+			PreparedStatement preparador = con.prepareStatement(sql);
+			ResultSet resultado = preparador.executeQuery();
+			while (resultado.next()) {
+				Livro livro = new Livro();
+				livro.setCodigo(resultado.getLong("codigo"));
+				livro.setAutor(resultado.getString("autor"));
+				livro.setEditora(resultado.getString("editora"));
+				livro.setTitulo(resultado.getString("titulo"));
+				livro.setQuantidade(resultado.getLong("quantidade"));
+				livro.setObservacao(resultado.getString("observacao"));
+				livro.setMatricula_aluno(resultado.getLong("matricula_aluno"));
+				livro.setStatus(resultado.getString("status"));
+
+				lista.add(livro);
+			}
+			preparador.close();
+			System.out.println("Selecionado todos com sucesso");
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return lista;
+	}
+
+	public void deletar(Livro livro) {
+		// Monta SQL
+		String sql = "DELETE FROM livro WHERE codigo=?";
+		// Constroe PreparaStatement com SQL
+		try {
 			PreparedStatement preparador = con.prepareStatement(sql);
 			preparador.setLong(1, livro.getCodigo());
 			preparador.execute();
 			preparador.close();
 			System.out.println("Excluido com sucesso");
+			this.con.commit();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public Livro bucarPorId(Long codigo){
-		//Monta SQL
+
+	public Livro bucarPorId(Long codigo) {
+		// Monta SQL
 		String sql = "SELECT * FROM livro WHERE codigo = ?";
-		//Constroir PreparaStatement com SQL
+		// Constroir PreparaStatement com SQL
 		Livro livro = null;
 		try {
-			Connection con = ConexaoFactory.conectar();
 			PreparedStatement preparador = con.prepareStatement(sql);
 			ResultSet resultado = preparador.executeQuery();
-			if(resultado.next()){
+			if (resultado.next()) {
 				livro = new Livro();
-				livro.setCodigo(resultado.getLong("codigo")); 
+				livro.setCodigo(resultado.getLong("codigo"));
 				livro.setAutor(resultado.getString("autor"));
 				livro.setEditora(resultado.getString("editora"));
 				livro.setTitulo(resultado.getString("titulo"));
@@ -130,33 +133,32 @@ public class LivroDAO {
 		}
 		return livro;
 	}
-	
-	public void deletarTodos(){
-		//Monta SQL
+
+	public void deletarTodos() {
+		// Monta SQL
 		String sql = "DELETE FROM livro";
-		//Constroe PreparaStatement com SQL
+		// Constroe PreparaStatement com SQL
 		try {
-			Connection con = ConexaoFactory.conectar();
 			PreparedStatement preparador = con.prepareStatement(sql);
 			preparador.execute();
 			preparador.close();
 			System.out.println("Excluido todos com sucesso");
+			this.con.commit();
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
 	}
-	
-	public Livro autenticar(Livro livro){
+
+	public Livro autenticar(Livro livro) {
 		String sql = "SELECT * FROM livro WHERE codigo = ? ";
-		Livro livroRetorno=null;
+		Livro livroRetorno = null;
 		try {
-			Connection con = ConexaoFactory.conectar();
 			PreparedStatement preparador = con.prepareStatement(sql);
 			preparador.setLong(1, livro.getCodigo());
 			ResultSet resultado = preparador.executeQuery();
-			if(resultado.next()){
+			if (resultado.next()) {
 				livroRetorno = new Livro();
-				livroRetorno.setCodigo(resultado.getLong("codigo")); 
+				livroRetorno.setCodigo(resultado.getLong("codigo"));
 				livroRetorno.setAutor(resultado.getString("autor"));
 				livroRetorno.setEditora(resultado.getString("editora"));
 				livroRetorno.setTitulo(resultado.getString("titulo"));
@@ -167,8 +169,9 @@ public class LivroDAO {
 			}
 			System.out.println("Buscado com sucesso");
 		} catch (SQLException e) {
-			System.out.println("Erro"+"\n"+e.getMessage());
+			System.out.println("Erro" + "\n" + e.getMessage());
 		}
 		return livroRetorno;
 	}
+	
 }
