@@ -34,7 +34,7 @@
 			           <li><a href="contato.jsp">Contato</a></li>
 			         </ul>
 			        <div class="pull-right logout">
-						<a href="login.jsp"><button class="btn btn-defalt btn-logout"><span class="glyphicon glyphicon-off"></span>&nbsp; &nbsp;sair </button></a>
+						<a href="login.jsp"><h4 style="color:#FFFFFF">Sair</h4></a>
 			        </div>
 			       </div><!--/.nav-collapse -->
 			     </div>

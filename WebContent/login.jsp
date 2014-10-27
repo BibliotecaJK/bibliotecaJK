@@ -13,17 +13,21 @@
 	</head>
 
 
-	<body background="resources/img/teste2.jpg">
-			<div class="login">
-				<div class="container text-center" >						
+	<body background="resources/img/bibli2.jpg">
+		<div class="container text-center">
+				<div class="bem-vindo-jk">
+					<h2 class="text-center">Bem vindo a Biblioteca JK.</h2>
+					<h4 class="text-center">O bom livro é um bom amigo, que nos repreende sem cerimônia e nos anima sem adulação.</h4> <br /> <br />
+				</div>	
+				<div class="login">					
 					<form class="form-signin well" action="indexAdmin.jsp" role="form">	
 						<img src="resources/img/faculdadeJk.png" alt="Avatar" title="JK" class="img-rounded img-faculdade">
 		
-						<input type="text" class="form-control" title="Informe seu usuario" placeholder="usuario" required autofocus>
-						<input type="password" class="form-control" title="Informe sua Senha" placeholder="Senha" required >
+						<input type="text" class="form-control" title="Informe sua matrícula" placeholder="matrícula" required autofocus>
+						<input type="password" class="form-control" title="Informe sua senha" placeholder="senha" required >
 													
 						<div class="entrar">
-							<button class="btn btn-lg btn-primary btn-block btn-login" type="submit" rel="tooltip" title="Entrar">Fazer Login</button>				
+							<button class="btn btn-lg btn-primary btn-block btn-login" type="submit" rel="tooltip" title="Entrar">Login</button>				
 						</div>
 						</label>				
 					</form>

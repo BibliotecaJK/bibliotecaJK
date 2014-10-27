@@ -15,10 +15,10 @@
 			<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
 		</head>
 			
-		<body>
+		<body background="resources/img/teste.jpg" style="background-repeat: no-repeat;">
 			<c:import url="menu.jsp" />		
 		
-			<div class="container" id="backgroud">
+			<div class="container">
 				<div class="corpo-conteudo">
 					<div class="alinhamento-bem-vindo">
 						<h2 class="text-center">Bem vindo a biblioteca JK.</h2>
@@ -28,11 +28,11 @@
 						<div id="campoPesquisa">
 							<div class="row">
 								<div class="alinhamento-pesquisa">
-									<div class="col-md-6">
+									<div class="col-md-7">
 										<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
 									</div>
 									<div class="col-md-2">
-										<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button></a>
+										<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp; Pesquisar</button></a>
 									</div>
 								</div>
 							</div>

@@ -15,23 +15,25 @@
 			<script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
 		</head>
 			
-		<body>
+		<body background="resources/img/teste.jpg" style="background-repeat: no-repeat;">
 			<c:import url="menu.jsp" />		
 		
-			<div class="container" id="backgroud">
+			<div class="container">
 				<div class="corpo-conteudo">
-					<h2 class="text-center" id="bemVindo">Bem vindo a biblioteca JK.</h2>
-					<h4 class="text-center">O bom livro é um bom amigo, que nos repreende sem cerimônia e nos anima sem adulação.</h4> <br /> <br /> <br /><br /> <br />
-	
-	
-					<div id="campoPesquisa">
-						<div class="row">
-							<div class="alinhamento-pesquisa">
-								<div class="col-md-7">
-									<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
-								</div>
-								<div class="col-md-2">
-									<a  href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button></a>
+					<div class="alinhamento-bem-vindo">
+						<h2 class="text-center" id="bemVindo">Bem vindo a biblioteca JK.</h2>
+						<h4 class="text-center">O bom livro é um bom amigo, que nos repreende sem cerimônia e nos anima sem adulação.</h4> <br /> <br /> <br /><br /> <br />
+		
+		
+						<div id="campoPesquisa">
+							<div class="row">
+								<div class="alinhamento-pesquisa">
+									<div class="col-md-7">
+										<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
+									</div>
+									<div class="col-md-2">
+										<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp; Pesquisar</button></a>
+									</div>
 								</div>
 							</div>
 						</div>

@@ -18,10 +18,13 @@
 	<body>
 		<c:import url="menu.jsp" />		
 	
-<!-- 		<img src="resources/img/contato.png" id="img-contato"> -->
-		<div class="container" id="">
+		<div class="container">
 		<div id="contato">
-		
+			<div class="text-center header-contato">
+				<h3>Fale Conosco</h3>
+				<h4>Crítica, sugestão ou elogio? Envie-nos! Queremos sempre melhorar nossos serviços.</h4>
+				<hr>
+			</div>
 			<div class="col-lg-6">
 				<div class="panel panel-primary">
 			      <div class="panel-heading">
@@ -44,19 +47,19 @@
 				  			</div>
 			  			</div>
 			  			
-			  			<div class="row text-center">
+			  			<div class="row text-right" style="margin-right:3px;">
 			  				<button class="btn btn-primary" style="margin-top:20px;" id="enviar-contato"> Enviar</button>
 			  			</div>
 			      </div>
 			    </div>
 			</div> 
 			<div class="col-lg-6">
-				<h3>Nossas unidades</h3>
+				<h3>Nossa unidade</h3>
 				<hr> <br /> 
 				
 				<div class="media">
 			      <a class="pull-left" href="#">
-			        <img class="media-object" data-src="holder.js/64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 70px; height: 90px;">
+			        <img class="media-object" src="resources/img/jk.png" style="width: 90px; height: 90px;">
 			      </a>
 			      <div class="media-body">
 			        <h4 class="media-heading">Gama</h4>
@@ -70,7 +73,7 @@
 			    
 			    <div class="media">
 			      <a class="pull-left" href="#">
-			        <img class="media-object" data-src="holder.js/64x64" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCI+PHJlY3Qgd2lkdGg9IjY0IiBoZWlnaHQ9IjY0IiBmaWxsPSIjZWVlIi8+PHRleHQgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMzIiIHk9IjMyIiBzdHlsZT0iZmlsbDojYWFhO2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjEycHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+NjR4NjQ8L3RleHQ+PC9zdmc+" style="width: 70px; height: 90px;">
+			        <img class="media-object" data-src="holder.js/64x64" src="resources/img/ouvidoria.jpg" style="width: 90px; height: 80px;">
 			      </a>
 			      <div class="media-body">
 			        Para entrar em contato com a Ouvidoria: <br /> 
