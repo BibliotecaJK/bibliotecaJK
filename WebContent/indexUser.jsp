@@ -32,7 +32,7 @@
 										<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
 									</div>
 									<div class="col-md-2">
-										<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp; Pesquisar</button></a>
+										<a href="livros.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search"></span>&nbsp; Pesquisar</button></a>
 									</div>
 								</div>
 							</div>

@@ -91,7 +91,7 @@
 							</div>
 						</div>
 						<div class="pull-right">
-							<button class="btn btn-primary">
+							<button class="btn btn-primary" data-toggle="modal" data-target="#alerta-cadastro-sucesso">
 								<span class="glyphicon glyphicon-plus"> </span>&nbsp &nbsp
 								Reservar
 							</button>
@@ -280,6 +280,26 @@
 		<!-- /.modal-dialog -->
 	</div>
 	<!-- /.modal -->
+	
+	
+	<!-- MODAL DE ALERTA LIVRO CADASTRADO -->
+	<div class="modal fade" id="alerta-cadastro-sucesso" tabindex="-1"
+		role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body text-center">
+				<span class="glyphicon glyphicon-ok-circle"></span>
+					<h4>Seu livro foi reservado com sucesso.</h4> <br /><br />
+					<strong>ATENÇÃO:</strong> Você <strong>tem 2 dias úteis</strong> para fazer a
+					retirada do livro na biblioteca, caso contrário sua reserva será
+					<strong>cancelada.</strong> Obrigado.
+				</div>
+				<div class="modal-footer">
+					<a href="indexUser.jsp"><button type="button" class="btn btn-default" style="width:100px; margin-right: 230px;">Concluir</button></a>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>
 
 

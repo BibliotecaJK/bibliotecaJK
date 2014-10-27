@@ -89,6 +89,11 @@ body{
 	color: #FFFFFF;
 }
 
+.glyphicon-ok-circle{
+	color: #009900;
+	font-size: 80px;
+}
+
 #img-pesquisa {
 	margin-top: 120px;
 }
