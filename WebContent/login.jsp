@@ -13,20 +13,22 @@
 	</head>
 
 
-	<body id="backgrond-login">
-			<div class="container text-center" >						
-				<form class="form-signin well" action="indexAdmin.jsp" role="form">	
-					<img src="resources/img/faculdadeJk.png" alt="Avatar" title="Avatar" class="img-rounded">
-	
-					<input type="text" class="form-control" title="Informe seu usuario" placeholder="usuario" required autofocus>
-					<input type="password" class="form-control" title="Informe sua Senha" placeholder="Senha" required >
-												
-					<div class="entrar">
-						<button class="btn btn-lg btn-primary btn-block" type="submit" rel="tooltip" title="Entrar">Fazer Login</button>				
-					</div>
-					</label>				
-				</form>
-			</div><!--Fim do Container-->
+	<body background="resources/img/teste2.jpg">
+			<div class="login">
+				<div class="container text-center" >						
+					<form class="form-signin well" action="indexAdmin.jsp" role="form">	
+						<img src="resources/img/faculdadeJk.png" alt="Avatar" title="JK" class="img-rounded img-faculdade">
+		
+						<input type="text" class="form-control" title="Informe seu usuario" placeholder="usuario" required autofocus>
+						<input type="password" class="form-control" title="Informe sua Senha" placeholder="Senha" required >
+													
+						<div class="entrar">
+							<button class="btn btn-lg btn-primary btn-block btn-login" type="submit" rel="tooltip" title="Entrar">Fazer Login</button>				
+						</div>
+						</label>				
+					</form>
+				</div><!--Fim do Container-->
+			</div>
 	</body>
 	<script src="resources/js/jquery-1.10.2.min.js"></script>
 	<script src="resources/js/bootstrap.js"></script>

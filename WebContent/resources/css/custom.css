@@ -1,5 +1,5 @@
-body {
-	padding-top: 70px;
+body{
+	padding-top: 0px;
 }
 
 .navbar-default {
@@ -18,13 +18,32 @@ body {
 }
 
 .corpo-conteudo {
-	margin-top: 40px;
+	margin-top: 105px;
 	margin-right: 80px;
 }
 
 .img-rounded {
 	width: 110px;
 	text-align: center;
+}
+
+.alinhamento-bem-vindo{
+	margin-left: 74px;
+}
+
+.btn-login{
+	margin-top: 30px;
+	margin-bottom: 50px;
+}
+
+.img-faculdade{
+	margin-top: 30px;
+	width: 153px;
+	height: 116px;
+}
+
+.pesquisa-avancada{
+	margin-top: 60px;
 }
 
 .logout{
@@ -40,13 +59,14 @@ body {
 }
 
 .form-signin{
-	height: 350px;
+	height: 380px;
 }
 
 .well {
 	margin-top: 20px;
 	box-shadow: 0px 2px 5px 0px rgba(50, 50, 50, 0.42);
 }
+	
 
 .well img {
 	margin-bottom: 40px;
@@ -55,10 +75,15 @@ body {
 .form-signin {
 	margin-top: 2px;
 	text-align: center;
+	
 }
 
 .text-livro{
 	text-align: justify;
+}
+
+.login{
+	margin-top: 80px;
 }
 
 #img-pesquisa {
@@ -86,12 +111,6 @@ body {
 
 #painel-livros-cadastrados{
 	margin-top: 40px;
-}
-
-#backgrond-login{
-	background-image: url("../img/ee.jpg"); 
-	background-repeat: no-repeat;
-	margin-top: 80px;
 }
 
 #enviar-contato{

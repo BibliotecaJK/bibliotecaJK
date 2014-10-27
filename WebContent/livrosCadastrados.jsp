@@ -19,7 +19,7 @@
 	<c:import url="menu.jsp" />
 
 	<div class="container" id="">
-		<div class="col-lg-12">
+		<div class="col-lg-12 pesquisa-avancada">
 			<h4>Faça pesquisas avançadas</h4>
 			<div class="row">
 				<div class="col-md-3">

@@ -20,23 +20,24 @@
 		
 			<div class="container" id="backgroud">
 				<div class="corpo-conteudo">
-					<h2 class="text-center">Bem vindo a biblioteca JK.</h2>
-					<h4 class="text-center">O bom livro é um bom amigo, que nos repreende sem cerimônia e nos anima sem adulação.</h4> <br /> <br /> <br /><br /> <br />
-	
-	
-					<div id="campoPesquisa">
-						<div class="row">
-							<div class="alinhamento-pesquisa">
-								<div class="col-md-6">
-									<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
-								</div>
-								<div class="col-md-2">
-									<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button></a>
+					<div class="alinhamento-bem-vindo">
+						<h2 class="text-center">Bem vindo a biblioteca JK.</h2>
+						<h4 class="text-center">O bom livro é um bom amigo, que nos repreende sem cerimônia e nos anima sem adulação.</h4> <br /> <br /> <br /><br /> <br />
+		
+		
+						<div id="campoPesquisa">
+							<div class="row">
+								<div class="alinhamento-pesquisa">
+									<div class="col-md-6">
+										<input type="text" class="form-control" placeholder="pesquise seu livro aqui">
+									</div>
+									<div class="col-md-2">
+										<a href="livrosCadastrados.jsp"><button class="btn btn-primary">&nbsp;&nbsp;<span class="glyphicon glyphicon-search">&nbsp; Pesquisar</span></button></a>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-	
 					<div class="row" id="links-conteudo">
 						<div class="btn-conteudos">	
 							<div class="col-lg-2">
