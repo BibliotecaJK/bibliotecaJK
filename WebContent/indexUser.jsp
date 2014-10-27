@@ -16,7 +16,7 @@
 		</head>
 			
 		<body background="resources/img/teste.jpg" style="background-repeat: no-repeat;">
-			<c:import url="menu.jsp" />		
+			<c:import url="menuUser.jsp" />		
 		
 			<div class="container">
 				<div class="corpo-conteudo">

@@ -26,12 +26,12 @@
 			           <span class="icon-bar"></span>
 			         </button>
 			         <img id="img-faculdade" class="pull-left" alt="Faculdade JK" src="resources/img/faculdadeJk.png">
-			         <a class="navbar-brand" href="indexAdmin.jsp">BIBLIOTECA JK</a>
+			         <a class="navbar-brand" href="indexUser.jsp">BIBLIOTECA JK</a>
 			       </div>
 			       <div class="navbar-collapse collapse">
 			         <ul class="nav navbar-nav">
 			           <li><a href="#about">Serviços</a></li>
-			           <li><a href="contato.jsp">Contato</a></li>
+			           <li><a href="contatoUser.jsp">Contato</a></li>
 			         </ul>
 			        <div class="pull-right logout">
 						<a href="login.jsp"><h4 style="color:#FFFFFF">Sair</h4></a>

@@ -17,7 +17,7 @@
 
 <body background="resources/img/teste.jpg"
 	style="background-repeat: no-repeat;">
-	<c:import url="menu.jsp" />
+	<c:import url="menuAdmin.jsp" />
 
 	<div class="container">
 		<div class="corpo-conteudo">
@@ -51,7 +51,7 @@
 					<div class="col-lg-3">
 						<a data-toggle="modal" data-target="#modalCadastroLitro"> <img
 							id="img-pesquisa" src="resources/img/img-branca.jpg"
-							alt="pesquisar" class="img-circle"></a>
+							alt="Cadastro de Livros" class="img-circle"></a>
 						<h4 style="margin-left: 10px">
 							Cadastrar livro
 							<h4>
@@ -59,7 +59,7 @@
 
 					<div class="col-lg-3">
 						<a href="#" target="_blank"> <img id="img-pesquisa"
-							src="resources/img/img-branca.jpg" alt="pesquisar"
+							src="resources/img/img-branca.jpg" alt="Meus livros"
 							class="img-circle"></a>
 						<h4 style="margin-left: 30px">
 							Meus livros
@@ -67,17 +67,17 @@
 					</div>
 
 					<div class="col-lg-3">
-						<a href="#" target="_blank"> <img id="img-pesquisa"
-							src="resources/img/img-branca.jpg" alt="pesquisar"
+						<a href="tabelaLivroReservado.jsp"> <img id="img-pesquisa"
+							src="resources/img/img-branca.jpg" alt="Livros reservados"
 							class="img-circle"></a>
 						<h4 style="margin-left: 25px">
-							Emprestados
+							Reservas
 							<h4>
 					</div>
 
 					<div class="col-lg-3">
 						<a href="#" target="_blank"> <img id="img-pesquisa"
-							src="resources/img/img-branca.jpg" alt="pesquisar"
+							src="resources/img/img-branca.jpg" alt="Relatórios"
 							class="img-circle"></a>
 						<h4 style="margin-left: 40px">
 							Relatórios
@@ -114,13 +114,41 @@
 											</div>
 											<div class="row">
 												<div class="col-md-6">
-													Cód.Livro <input type="text" class="form-control"
+													ISBN <input type="text" class="form-control"
 														name="codigo" value="${requestScoped.livro.codigo}">
 												</div>
 												<div class="col-md-6">
 													Quantidade <input type="text" class="form-control"
 														name="quantidade"
 														value="${requestScoped.livro.quantidade}">
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6">
+													Categoria 
+													<select class="form-control">
+													  <option value="selecione">...</option>
+													  <option value="ti">TI</option>
+													  <option value="administracao">Administração</option>
+													  <option value="enfermagem">Enfermagem</option>
+													  <option value="pedagogia">Pedagogia</option>
+													  <option value="historia">Historia</option>
+													  <option value="radiologia">Radiologia</option>
+													  <option value="letras">Letras</option>
+													  <option value="publicidade">Publicidade</option>
+													</select>
+												</div>
+												<div class="col-md-6">
+													Idioma 
+													<select class="form-control">
+													  <option value="selecione">...</option>
+													  <option value="ti">Português</option>
+													  <option value="administracao">Inglês</option>
+													  <option value="enfermagem">Espanhou</option>
+													  <option value="pedagogia">Russo</option>
+													  <option value="historia">Francês</option>
+													  <option value="radiologia">Japonês</option>
+													</select>
 												</div>
 											</div>
 											<div class="row">

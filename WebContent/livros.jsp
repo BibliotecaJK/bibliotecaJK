@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<c:import url="menu.jsp" />
+	<c:import url="menuUser.jsp" />
 
 	<div class="container" id="">
 		<div class="col-lg-12 pesquisa-avancada">

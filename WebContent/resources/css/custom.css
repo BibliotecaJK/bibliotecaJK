@@ -45,6 +45,10 @@ body{
 	margin-top: 60px;
 }
 
+.painel-livros-reservados{
+	margin-top: 80px;
+}
+
 .logout{
 	margin-top: 8px;
 }
@@ -114,6 +118,10 @@ body{
 
 #enviar-contato{
 	width: 90px;
+}
+
+#pesq-reserva{
+	margin-top: 0px;
 }
 
 #bemVindo {

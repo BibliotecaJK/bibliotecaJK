@@ -16,7 +16,7 @@
 	</head>
 		
 	<body>
-		<c:import url="menu.jsp" />		
+		<c:import url="menuUser.jsp" />		
 	
 		<div class="container">
 		<div id="contato">
