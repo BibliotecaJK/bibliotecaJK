@@ -10,6 +10,7 @@ public class Livro {
 	private String observacao;
 	private Long matricula_aluno;
 	private String status;
+	
 
 	public Long getCodigo() {
 		return codigo;

@@ -20,14 +20,14 @@
 					<h4 class="text-center">O bom livro é um bom amigo, que nos repreende sem cerimônia e nos anima sem adulação.</h4> <br /> <br />
 				</div>	
 				<div class="login">					
-					<form class="form-signin well" action="indexAdmin.jsp" role="form">	
+					<form class="form-signin well" role="form" method="post" action="autenticador.do">	
 						<img src="resources/img/faculdadeJk.png" alt="Avatar" title="JK" class="img-rounded img-faculdade">
 		
-						<input type="text" class="form-control" title="Informe sua matrícula" placeholder="matrícula" required autofocus>
-						<input type="password" class="form-control" title="Informe sua senha" placeholder="senha" required >
+						<input type="text" class="form-control" title="Informe sua matrícula" placeholder="matrícula" name="matricula" value="" required autofocus>
+						<input type="password" class="form-control" title="Informe sua senha" placeholder="senha" name="senha" value="" required >
 													
 						<div class="entrar">
-							<button class="btn btn-lg btn-primary btn-block btn-login" type="submit" rel="tooltip" title="Entrar">Login</button>				
+							<button class="btn btn-lg btn-primary btn-block btn-login" type="submit" rel="tooltip" title="Entrar" value="Autenticar">Login</button>				
 						</div>
 						</label>				
 					</form>

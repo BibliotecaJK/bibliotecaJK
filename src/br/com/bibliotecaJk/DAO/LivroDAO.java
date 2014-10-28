@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.com.bibliotecaJk.domain.Aluno;
 import br.com.bibliotecaJk.domain.Livro;
 import br.com.bibliotecaJk.factory.ConexaoFactory;
 
@@ -148,30 +149,4 @@ public class LivroDAO {
 			e.printStackTrace();
 		}
 	}
-
-	public Livro autenticar(Livro livro) {
-		String sql = "SELECT * FROM livro WHERE codigo = ? ";
-		Livro livroRetorno = null;
-		try {
-			PreparedStatement preparador = con.prepareStatement(sql);
-			preparador.setLong(1, livro.getCodigo());
-			ResultSet resultado = preparador.executeQuery();
-			if (resultado.next()) {
-				livroRetorno = new Livro();
-				livroRetorno.setCodigo(resultado.getLong("codigo"));
-				livroRetorno.setAutor(resultado.getString("autor"));
-				livroRetorno.setEditora(resultado.getString("editora"));
-				livroRetorno.setTitulo(resultado.getString("titulo"));
-				livroRetorno.setQuantidade(resultado.getLong("quantidade"));
-				livroRetorno.setObservacao(resultado.getString("observacao"));
-				livroRetorno.setMatricula_aluno(resultado.getLong("matricula_aluno"));
-				livroRetorno.setStatus(resultado.getString("status"));
-			}
-			System.out.println("Buscado com sucesso");
-		} catch (SQLException e) {
-			System.out.println("Erro" + "\n" + e.getMessage());
-		}
-		return livroRetorno;
-	}
-	
 }

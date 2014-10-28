@@ -2,18 +2,23 @@ package br.com.bibliotecaJk.test;
 
 import java.util.List;
 
+import br.com.bibliotecaJk.DAO.AlunoDAO;
 import br.com.bibliotecaJk.DAO.LivroDAO;
+import br.com.bibliotecaJk.domain.Aluno;
 import br.com.bibliotecaJk.domain.Livro;
 
 
 public class LivroTest {
 	public static void main(String[] args) {
-		LivroDAO dao = new LivroDAO();
-		List<Livro> livro = dao.listar();
+		Aluno aluno = new Aluno();
+		aluno.setCodigo(20122937);
+		aluno.setSenha(1234567);
 		
-		for (Livro livro2 : livro) {
-			System.out.println(livro2.getAutor());
-		}
+		AlunoDAO dao = new AlunoDAO();
+		Aluno alunodao = dao.autenticar(aluno);
+		
+		System.out.println(alunodao.getCodigo());
+		
 	}
 
 }
