@@ -58,7 +58,7 @@
 					</div>
 
 					<div class="col-lg-3">
-						<a href="#" target="_blank"> <img id="img-pesquisa"
+					<a href="LivrosCadastrados.jsp"> <img id="img-pesquisa"
 							src="resources/img/img-branca.jpg" alt="Meus livros"
 							class="img-circle"></a>
 						<h4 style="margin-left: 30px">

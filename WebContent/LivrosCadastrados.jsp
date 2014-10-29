@@ -10,10 +10,11 @@
 		  <link rel="stylesheet" href="resources/css/bootstrap.css"></link>
           <link rel="stylesheet" href="resources/css/custom.css"></link>
           <link rel="shortcut icon" href="resources/img/icon-jk.ico"></link>
-          <script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
-            
- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-    
+          <script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>          
+          
+          </head>
+          <br>
+          <br>		
     <body>
 				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			     <div class="container">
@@ -43,21 +44,21 @@
 			<div class="col-lg-12">
 				<div class="panel panel-primary" id="painel-livros-cadastrados">
 					<div class="panel-heading">
-						<h3 class="panel-title">Livros Cadastrados</h3>
+						<h3 class="panel-title" >Livros Cadastrados</h3>
 						</div>
 						
    <br>    
-    <table id="tabela-cadastro-livro">
+    <table id="tabela">
             			      
 	 		      <thead>
 	 		       
 			        <tr>
-			          <th style="celula-center">Cód. Livro</th>
-			          <th stye="celula_center">Título</th>
-			          <th stye="celula_center">Autor</th>
-			          <th stye="celula_center">Editora</th>
-			          <th stye="celula_center">Quantidade</th>
-			          <th stye="celula_center">Emprestados</th>
+			          <td style="celula-center"><b>Cód. Livro</td>
+			          <td stye="celula_center"><b>Título</td>
+			          <td stye="celula_center"><b>Autor</td>
+			          <td stye="celula_center"><b>Editora</td>
+			          <td stye="celula_center"><b>Quantidade</td>
+			          <td stye="celula_center"><b>Emprestados</td>
 			        </tr>
 			      </thead>
 				     
