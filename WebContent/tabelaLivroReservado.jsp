@@ -156,12 +156,9 @@
 		<!-- Fim da tabela livro -->
 	</div>
 	<!-- Fim do container -->
-
-</body>
-
-
-<script type="text/javascript" src="resources/js/bootstrap.js"></script>
-<script type="text/javascript" src="resources/js/custom.js"></script>
-<script type="text/javascript" src="resources/js/jquery.dataTables.js"></script>
-
+    <script type="text/javascript" src="resources/js/bootstrap.js"></script>
+    <script type="text/javascript" src="resources/js/jquery.dataTables.js"></script>
+    <script type="text/javascript" src="resources/js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="resources/js/custom.js"></script>
+  </body>
 </html>

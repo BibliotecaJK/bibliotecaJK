@@ -3,5 +3,9 @@ function salvar() {
 }
 
 $(document).ready(function(){
-    $('#tabela').DataTable();
+    $('#tabela').DataTable({
+    	  "language": {
+              "url": "resources/js/linguagem-ptbr-dataTable.json"
+          }
+      });
 });
