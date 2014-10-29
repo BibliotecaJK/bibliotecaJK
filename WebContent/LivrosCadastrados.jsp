@@ -13,62 +13,7 @@
           <script type="text/javascript" src="resources/js/jquery-1.10.2.min.js"></script>
             
  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-        <style type="text/css">
-            @page{
-                margin-top: 3cm;
-                margin-left: 3cm;
-                margin-bottom: 2cm;
-                margin-left: 2cm;
-            }
-            #titulo{
-                font-size: 14px;
-                text-align: center;
-            }
-            #tabela{
-                width: 90%;
-                font-size: 12px;
-                margin: 0 auto;
-                text-align: center;
-                border: 1px solid black;
-                border-collapse: collapse;
-                white-space: pre-line;
-                table-layout: auto;
-                width: content-box;
-				height: content-box;
-            }
-            .celula{
-                border: 1px solid black;
-                text-align: center;
-                font-size: 12px;
-            }
-            .celula_center{
-                border: 1px solid black;
-                text-align: center;
-                font-size: 12px;
-			}
-            .celula_head{
-                border: 2px solid black;
-                background-color: #D3D3D3;
-                text-align: center;
-                font-size: 12px;
-            }
-            #rodape-final{
-                width: 100%;
-                position: absolute;
-                top: 22cm;
-                left: 0cm;
-                bottom: 3cm;
-                right: 2cm;
-                font-size: 12px;
-            }
-            #align-center{
-                text-align: center;
-            }
-        </style>
     
-          
-          </head>
-          		
     <body>
 				<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			     <div class="container">
@@ -102,7 +47,7 @@
 						</div>
 						
    <br>    
-    <table id="tabela">
+    <table id="tabela-cadastro-livro">
             			      
 	 		      <thead>
 	 		       
