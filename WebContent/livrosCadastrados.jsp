@@ -38,13 +38,14 @@
 							<th>Quantidade</th>
 							<th>Observações</th>
 							<th>Ações</th>
+							<th>Ações</th>
 						</tr>
 					</thead>
+					<tbody>
 					<%
 						List<Livro> lista = (List<Livro>) request.getAttribute("lista");
 						for (Livro liv : lista) {
 					%>
-					<tbody>
 						<tr>
 							<td><%=liv.getCodigo()%></td>
 							<td><%=liv.getTitulo()%></td>
@@ -74,8 +75,7 @@
 	<!-- Fim do container -->
 	<script type="text/javascript" src="resources/js/bootstrap.js"></script>
 	<script type="text/javascript" src="resources/js/jquery.dataTables.js"></script>
-	<script type="text/javascript"
-		src="resources/js/dataTables.bootstrap.js"></script>
+	<script type="text/javascript" src="resources/js/dataTables.bootstrap.js"></script>
 	<script type="text/javascript" src="resources/js/custom.js"></script>
 </body>
 </html>

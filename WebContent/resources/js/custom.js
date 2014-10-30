@@ -3,16 +3,11 @@ function salvar() {
 }
 
 $(document).ready(function(){
-    $('#tabela').DataTable({
+    $('#tabela, #tabela-livros-cadastrado').DataTable({
     	  "language": {
               "url": "resources/js/linguagem-ptbr-dataTable.json"
           }
       });
-    
-    $('#tabela-livros-cadastrado').DataTable({
-  	  "language": {
-            "url": "resources/js/linguagem-ptbr-dataTable.json"
-        }
-    });
+
 });
 
