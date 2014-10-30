@@ -42,12 +42,12 @@ public class LivroController extends HttpServlet {
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		
-		LivroDAO livro = new LivroDAO();		
-		List<Livro> lista = livro.listar();
+		LivroDAO livroDao = new LivroDAO();		
+		List<Livro> lista = livroDao.listar();
 		
 		request.setAttribute("lista", lista);
 		
-		RequestDispatcher saida = request.getRequestDispatcher("pages/tabelaCadastroLivro.jsp");
+		RequestDispatcher saida = request.getRequestDispatcher("livrosCadastrados.jsp");
 		saida.forward(request, response);
 		
 		System.out.println("Metodo Get");	
@@ -111,9 +111,9 @@ public class LivroController extends HttpServlet {
 		
 		request.setAttribute("livro", livro2);
 
-//		engavetar no request
+		//engavetar no request
 		
-		RequestDispatcher saida2= request.getRequestDispatcher("/pages/tabelaCadastroLivro.jsp");
+		RequestDispatcher saida2= request.getRequestDispatcher("tabelaCadastroLivro.jsp");
 		saida.forward(request, response);
 		}
 

@@ -13,7 +13,7 @@
 	</head>
 
 
-	<body background="resources/img/bibli2.jpg">
+	<body background="resources/img/login.jpg">
 		<div class="container text-center">
 				<div class="bem-vindo-jk">
 					<h2 class="text-center">Bem vindo a Biblioteca JK.</h2>

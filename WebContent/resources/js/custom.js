@@ -8,4 +8,11 @@ $(document).ready(function(){
               "url": "resources/js/linguagem-ptbr-dataTable.json"
           }
       });
+    
+    $('#tabela-livros-cadastrado').DataTable({
+  	  "language": {
+            "url": "resources/js/linguagem-ptbr-dataTable.json"
+        }
+    });
 });
+
