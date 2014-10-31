@@ -16,6 +16,10 @@ body{
 	margin-bottom: 50px;
 }
 
+a:link {
+	text-decoration: none;
+}
+
 .corpo-conteudo {
 	margin-top: 105px;
 	margin-right: 80px;
