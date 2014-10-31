@@ -24,7 +24,7 @@
 		<div class="col-lg-12 painel-livros-reservados">
 			<div class="panel panel-info">
 				<!-- Default panel contents -->
-				<div class="panel-heading">ACOMPANHAMENTO DE LIVROS RESERVADOS</div>
+				<div class="panel-heading"><strong>LIVROS CADASTRADOS</strong></div>
 
 
 				<!-- Table -->
@@ -37,7 +37,6 @@
 							<th>Editora</th>
 							<th>Quantidade</th>
 							<th>Observações</th>
-							<th>Ações</th>
 							<th>Ações</th>
 						</tr>
 					</thead>
@@ -53,14 +52,10 @@
 							<td><%=liv.getEditora()%></td>
 							<td><%=liv.getQuantidade()%></td>
 							<td><%=liv.getObservacao()%></td>
-							<td><select class="form-control">
-									<option value="selecione">...</option>
-									<option value="administracao">Reservado</option>
-									<option value="enfermagem">Emprestado</option>
-									<option value="pedagogia">Devolvido</option>
-							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="livroServlet?acao=exc&codigo=<%= liv.getCodigo() %>"><span	class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-edit" title="editar"></span></a> &nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="visualizar"></span></a>
 							</td>
 						</tr>
 						<%

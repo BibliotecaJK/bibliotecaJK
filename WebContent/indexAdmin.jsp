@@ -70,7 +70,7 @@
 						<a href="tabelaLivroReservado.jsp"> <img id="img-pesquisa"
 							src="resources/img/img05.jpg" alt="Livros reservados"
 							class="img-circle"></a>
-						<h4 style="margin-left: 25px">
+						<h4 style="margin-left: 35px">
 							Reservas
 							<h4>
 					</div>
@@ -163,9 +163,8 @@
 							<div class="modal-footer">
 								<div class="pull-right">
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-										<button type="submit" id="btn-salvar" 
-											data-toggle="modal" data-target=""
-											class="btn btn-info btn-block " >
+										<button type="submit" id="btn-salvar" data-toggle="modal"
+											data-target="" class="btn btn-info btn-block ">
 											<span class="glyphicon glyphicon-floppy-disk">&nbsp</span>
 											Salvar
 										</button>
@@ -173,7 +172,7 @@
 									<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
 										<button type="button" id="cancelar"
 											class="btn btn-danger btn-block" data-dismiss="modal">
-											<span class="glyphicon glyphicon-ban-circle">&nbsp</span>
+											<span class="glyphicon glyphicon-remove">&nbsp</span>
 											Cancelar
 										</button>
 									</div>

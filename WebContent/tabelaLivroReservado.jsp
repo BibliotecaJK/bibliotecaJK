@@ -22,7 +22,7 @@
 		<div class="col-lg-12 painel-livros-reservados">
 			<div class="panel panel-info">
 				<!-- Default panel contents -->
-				<div class="panel-heading">ACOMPANHAMENTO DE LIVROS RESERVADOS</div>
+				<div class="panel-heading"><strong>ACOMPANHAMENTO DE LIVROS RESERVADOS</strong></div>
 
 
 				<!-- Table -->
@@ -55,8 +55,9 @@
 									<option value="enfermagem">Emprestado</option>
 									<option value="pedagogia">Devolvido</option>
 							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="#"><span class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
 							</td>
 						</tr>
 						<tr>
@@ -73,8 +74,9 @@
 									<option value="enfermagem">Emprestado</option>
 									<option value="pedagogia">Devolvido</option>
 							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="#"><span class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
 							</td>
 						</tr>
 						<tr>
@@ -91,8 +93,9 @@
 									<option value="enfermagem">Emprestado</option>
 									<option value="pedagogia">Devolvido</option>
 							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="#"><span class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
 							</td>
 						</tr>
 						<tr>
@@ -109,8 +112,9 @@
 									<option value="enfermagem">Emprestado</option>
 									<option value="pedagogia">Devolvido</option>
 							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="#"><span class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
 							</td>
 						</tr>
 						<tr>
@@ -127,8 +131,9 @@
 									<option value="enfermagem">Emprestado</option>
 									<option value="pedagogia">Devolvido</option>
 							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="#"><span class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
 							</td>
 						</tr>
 						<tr>
@@ -145,8 +150,9 @@
 									<option value="enfermagem">Emprestado</option>
 									<option value="pedagogia">Devolvido</option>
 							</select></td>
-							<td><a href="#"><span
-									class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
+							<td>
+							<a href="#"><span class="glyphicon glyphicon-trash" title="excluir"></span></a>&nbsp;&nbsp;
+							<a href="#"><span class="glyphicon glyphicon-eye-open" title="Visualizar"></span></a>
 							</td>
 						</tr>
 					</tbody>
